@@ -1,302 +1,392 @@
-window.QUIZ_QUESTIONS = [
+window.QUIZ_QUESTIONS=[
   {
-    id: 1,
-    category: "Digital Analytics",
-    question: "What is the primary purpose of Hotjar?",
-    options: [
-      "Database management",
-      "User behavior analytics",
-      "Email marketing",
-      "Payroll processing"
+    "id": 1,
+    "category": "eMSME Purpose",
+    "question": "Which statement best reflects the purpose of an MSME-focused financial organization?",
+    "options": [
+      "Only maximize transaction volume",
+      "Enable sustainable growth through accessible financial solutions",
+      "Serve only large enterprises",
+      "Avoid digital channels"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "The strongest MSME proposition combines access, usefulness and sustainable business growth."
   },
   {
-    id: 2,
-    category: "MSME Definition",
-    question: "As per the revised MSME definition, classification is based on:",
-    options: [
-      "Number of employees",
-      "Turnover and Investment",
-      "Location",
-      "Industry type only"
+    "id": 2,
+    "category": "Customer First",
+    "question": "A customer reports a delay affecting business operations. What should you do first?",
+    "options": [
+      "Wait for another complaint",
+      "Acknowledge, investigate and communicate ownership",
+      "Close the request",
+      "Redirect without context"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Fast acknowledgement, clear ownership and transparent communication protect customer trust."
   },
   {
-    id: 3,
-    category: "MSME Definition",
-    question: "Maximum investment limit for a Micro Enterprise is:",
-    options: [
-      "₹1 Crore",
-      "₹5 Crore",
-      "₹10 Crore",
-      "₹50 Crore"
+    "id": 3,
+    "category": "Risk & Governance",
+    "question": "Why is strong governance important while scaling an MSME business?",
+    "options": [
+      "It slows every decision",
+      "It replaces customer experience",
+      "It creates resilience, accountability and trust",
+      "It is relevant only during audits"
     ],
-    correct: 0
+    "correct": 2,
+    "explanation": "Governance enables responsible scale and reduces hidden operational and compliance risk."
   },
   {
-    id: 4,
-    category: "MSME Definition",
-    question: "Maximum turnover limit for a Small Enterprise is:",
-    options: [
-      "₹10 Crore",
-      "₹50 Crore",
-      "₹100 Crore",
-      "₹250 Crore"
+    "id": 4,
+    "category": "Technology",
+    "question": "What is the best reason to use technology in an MSME lending journey?",
+    "options": [
+      "To remove all human judgment",
+      "To improve speed, consistency and customer experience",
+      "To add more manual steps",
+      "To avoid data"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Technology should improve decisions and service while retaining appropriate controls."
   },
   {
-    id: 5,
-    category: "Saarthi",
-    question: "Saarthi simplifies:",
-    options: [
-      "Trading activities",
-      "Government scheme search and application journey",
-      "Loan repayment",
-      "Payroll processing"
+    "id": 5,
+    "category": "Ownership",
+    "question": "Which behavior demonstrates ownership?",
+    "options": [
+      "Escalating without follow-through",
+      "Waiting for instructions",
+      "Taking accountability, coordinating action and closing the loop",
+      "Protecting only departmental goals"
     ],
-    correct: 1
+    "correct": 2,
+    "explanation": "Ownership means driving resolution across boundaries and closing the loop."
   },
   {
-    id: 6,
-    category: "Government Schemes",
-    question: "ZED Certification focuses on:",
-    options: [
-      "Digital marketing",
-      "Quality and productivity improvements",
-      "Employee recruitment",
-      "Foreign exchange"
+    "id": 6,
+    "category": "Collaboration",
+    "question": "What creates the strongest cross-functional outcome?",
+    "options": [
+      "Teams optimizing only their own metrics",
+      "Shared goals, transparent trade-offs and timely decisions",
+      "Avoiding difficult discussions",
+      "Keeping information within functions"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Shared outcomes require visibility, constructive debate and coordinated execution."
   },
   {
-    id: 7,
-    category: "Government Schemes",
-    question: "RAMP stands for:",
-    options: [
-      "Raising and Accelerating MSME Performance",
-      "Resource Allocation Management Program",
-      "Regional Assistance Management Plan",
-      "Rural Advancement MSME Program"
+    "id": 7,
+    "category": "Business Acumen",
+    "question": "Which measure gives the most balanced view of business performance?",
+    "options": [
+      "Revenue alone",
+      "Growth, customer quality, risk, cash and capability together",
+      "Number of meetings",
+      "Marketing spend alone"
     ],
-    correct: 0
+    "correct": 1,
+    "explanation": "Sustainable performance balances growth with customer, risk, cash and organizational capability."
   },
   {
-    id: 8,
-    category: "Compliance Health Check",
-    question: "The primary objective of a Compliance Health Check (CHC) is to:",
-    options: [
-      "Increase sales revenue",
-      "Evaluate a business's compliance status and identify gaps",
-      "Prepare financial statements",
-      "Calculate tax liability"
+    "id": 8,
+    "category": "Cybersecurity",
+    "question": "What should an employee do after receiving a suspicious link requesting credentials?",
+    "options": [
+      "Open it quickly",
+      "Forward it to customers",
+      "Report it through the approved security channel and do not click",
+      "Reply with credentials"
     ],
-    correct: 1
+    "correct": 2,
+    "explanation": "Suspicious links should be reported immediately and never opened or answered with credentials."
   },
   {
-    id: 9,
-    category: "Excel",
-    question: "Which formula combination is often considered a better alternative to VLOOKUP?",
-    options: [
-      "MAX + MIN",
-      "INDEX + MATCH",
-      "SUM + IF",
-      "LEN + TRIM"
+    "id": 9,
+    "category": "Customer Trust",
+    "question": "What most strongly compounds customer trust over time?",
+    "options": [
+      "One-time discounts",
+      "Consistent service, transparency and reliable resolution",
+      "Frequent policy changes",
+      "Avoiding feedback"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Trust compounds through consistent delivery and transparent ownership."
   },
   {
-    id: 10,
-    category: "Excel",
-    question: "What will the formula =COUNTIF(A1:A10,\">100\") return?",
-    options: [
-      "Sums values above 100",
-      "Counts cells with values above 100",
-      "Counts text only",
-      "Finds maximum value"
+    "id": 10,
+    "category": "Startup Mindset",
+    "question": "What best describes a startup mindset inside a growing organization?",
+    "options": [
+      "Act fast without controls",
+      "Learn quickly, prioritize value and own outcomes",
+      "Avoid experimentation",
+      "Focus only on short-term revenue"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "A startup mindset combines speed, learning, customer value and responsible ownership."
   },
   {
-    id: 11,
-    category: "Power BI",
-    question: "A user wants a dashboard displaying CHC scores across states. Which tool should be used?",
-    options: [
-      "Power Automate",
-      "Power Apps",
-      "Power BI",
-      "Outlook"
+    "id": 11,
+    "category": "Customer Experience",
+    "question": "Which action is most likely to improve customer retention?",
+    "options": [
+      "Respond only when customers escalate",
+      "Simplify journeys and resolve issues consistently",
+      "Change processes frequently",
+      "Focus only on acquisition"
     ],
-    correct: 2
+    "correct": 1,
+    "explanation": "Simple journeys and reliable resolution create reasons for customers to stay."
   },
   {
-    id: 12,
-    category: "E-Invoicing",
-    question: "Which document element is generated after successful invoice reporting to IRP?",
-    options: [
-      "DSC",
-      "IRN",
-      "TAN",
-      "CIN"
+    "id": 12,
+    "category": "Credit Discipline",
+    "question": "What is the best foundation for a responsible credit decision?",
+    "options": [
+      "Speed alone",
+      "A balanced assessment of ability, intent, cash flow and risk",
+      "A single document",
+      "Competitor behavior"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Responsible credit decisions balance business context, repayment capacity and risk."
   },
   {
-    id: 13,
-    category: "Power BI",
-    question: "Power BI is mainly used for:",
-    options: [
-      "Data visualization and dashboards",
-      "Email management",
-      "Coding",
-      "Payroll"
+    "id": 13,
+    "category": "Data",
+    "question": "Why is good data quality important?",
+    "options": [
+      "It makes reports longer",
+      "It supports reliable decisions, controls and customer service",
+      "It removes accountability",
+      "It eliminates all uncertainty"
     ],
-    correct: 0
+    "correct": 1,
+    "explanation": "Accurate, complete and timely data is essential for reliable decisions and controls."
   },
   {
-    id: 14,
-    category: "E-Invoicing",
-    question: "E-invoicing is currently mandatory for businesses whose aggregate turnover exceeds:",
-    options: [
-      "₹1 Crore",
-      "₹2 Crore",
-      "₹5 Crore",
-      "₹10 Crore"
+    "id": 14,
+    "category": "Innovation",
+    "question": "Which is the most responsible way to test a new idea?",
+    "options": [
+      "Launch everywhere without measurement",
+      "Run a controlled pilot, learn and improve",
+      "Avoid customer feedback",
+      "Wait until there is no uncertainty"
     ],
-    correct: 2
+    "correct": 1,
+    "explanation": "Controlled pilots allow teams to learn while containing operational and customer risk."
   },
   {
-    id: 15,
-    category: "Knowledge Management",
-    question: "What does SECI stand for?",
-    options: [
-      "Socialization, Evaluation, Control, Integration",
-      "Socialization, Externalization, Combination, Internalization",
-      "Sharing, Execution, Communication, Innovation",
-      "Standardization, Evaluation, Collaboration, Improvement"
+    "id": 15,
+    "category": "Execution",
+    "question": "What usually improves execution quality?",
+    "options": [
+      "More priorities",
+      "Clear outcomes, owners and review rhythm",
+      "Unclear accountability",
+      "Delayed decisions"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Execution improves when goals, ownership and review cadence are explicit."
   },
   {
-    id: 16,
-    category: "Kaizen",
-    question: "What is the core philosophy of Kaizen?",
-    options: [
-      "Radical transformation",
-      "Continuous incremental improvement",
-      "Automation only",
-      "Employee monitoring"
+    "id": 16,
+    "category": "Compliance",
+    "question": "When should compliance be considered in a new product journey?",
+    "options": [
+      "Only after launch",
+      "From the design stage onward",
+      "Only during an audit",
+      "Only when a customer asks"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Compliance by design prevents costly rework and protects customers and the organization."
   },
   {
-    id: 17,
-    category: "Kaizen",
-    question: "In Kaizen, \"Muda\" refers to:",
-    options: [
-      "Innovation",
-      "Documentation",
-      "Waste",
-      "Planning"
+    "id": 17,
+    "category": "Communication",
+    "question": "What is the most effective communication during uncertainty?",
+    "options": [
+      "Silence until everything is resolved",
+      "Clear facts, ownership, next steps and regular updates",
+      "Unverified assumptions",
+      "Only informal messages"
     ],
-    correct: 2
+    "correct": 1,
+    "explanation": "Transparent and timely communication builds confidence even when all answers are not yet available."
   },
   {
-    id: 18,
-    category: "Process Improvement",
-    question: "PDCA stands for:",
-    options: [
-      "Plan, Do, Check, Act",
-      "Prepare, Document, Check, Analyze",
-      "Plan, Deliver, Control, Audit",
-      "Process, Do, Check, Apply"
+    "id": 18,
+    "category": "Prioritization",
+    "question": "How should competing business priorities be evaluated?",
+    "options": [
+      "By the loudest request",
+      "By customer value, risk, effort and strategic relevance",
+      "By random selection",
+      "By avoiding trade-offs"
     ],
-    correct: 0
+    "correct": 1,
+    "explanation": "Good prioritization makes trade-offs visible and links work to value and risk."
   },
   {
-    id: 19,
-    category: "Performance Management",
-    question: "What does OKR stand for?",
-    options: [
-      "Objectives and Key Results",
-      "Output and Key Records",
-      "Operations and Key Reviews",
-      "Objectives and Key Responsibilities"
+    "id": 19,
+    "category": "Resilience",
+    "question": "Which practice most improves business resilience?",
+    "options": [
+      "Depending on one partner",
+      "Building alternatives, controls and response plans",
+      "Ignoring weak signals",
+      "Reducing all investment"
     ],
-    correct: 0
+    "correct": 1,
+    "explanation": "Resilience comes from preparation, diversification and the ability to respond quickly."
   },
   {
-    id: 20,
-    category: "Collaboration",
-    question: "Asynchronous transparency means:",
-    options: [
-      "Working without communication",
-      "Sharing written updates that can be accessed anytime",
-      "Communicating only through meetings",
-      "Reporting only to managers"
+    "id": 20,
+    "category": "Leadership",
+    "question": "What should a leader do after a team makes a responsible mistake?",
+    "options": [
+      "Hide the issue",
+      "Learn, correct the process and reinforce accountability",
+      "Blame one person publicly",
+      "Stop all experimentation"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Strong leaders combine accountability with learning and process improvement."
   },
   {
-    id: 21,
-    category: "RACI",
-    question: "In RACI, who performs the work?",
-    options: [
-      "Accountable",
-      "Responsible",
-      "Consulted",
-      "Informed"
+    "id": 21,
+    "category": "Cash Flow",
+    "question": "Why can a growing business still face financial stress?",
+    "options": [
+      "Growth always creates cash",
+      "Revenue and cash collections may occur at different times",
+      "Customers always pay immediately",
+      "Costs never rise with growth"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Growth can consume cash when collections lag behind expenses and investment."
   },
   {
-    id: 22,
-    category: "eMSME Podcast",
-    question: "In the eMSME podcast with Shri Vikas Pansare (IAS), the discussion primarily focused on which programme?",
-    options: [
-      "PMEGP",
-      "CGTMSE",
-      "RAMP",
-      "ZED Certification"
+    "id": 22,
+    "category": "Process Excellence",
+    "question": "Which process is most suitable for automation?",
+    "options": [
+      "A highly inconsistent process with no rules",
+      "A repetitive, rules-based process with clear inputs",
+      "Every leadership conversation",
+      "A process nobody understands"
     ],
-    correct: 2
+    "correct": 1,
+    "explanation": "Automation works best when the process is stable, repeatable and measurable."
   },
   {
-    id: 23,
-    category: "eMSME Podcast",
-    question: "In the podcast with CA Arpit Kabra, Chartered Accountants were described as evolving from:",
-    options: [
-      "Auditors to Bankers",
-      "Compliance Professionals to Strategic Advisors",
-      "Tax Officers to Regulators",
-      "Accountants to Exporters"
+    "id": 23,
+    "category": "Customer Feedback",
+    "question": "What is the best use of recurring customer complaints?",
+    "options": [
+      "Treat every case in isolation",
+      "Identify root causes and improve the underlying process",
+      "Stop collecting feedback",
+      "Respond only on social media"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Recurring complaints are signals of process or product issues that need systemic correction."
   },
   {
-    id: 24,
-    category: "eMSME Podcast",
-    question: "\"MSME ke SAA₹THI\" Episode 1 featured:",
-    options: [
-      "CA Vishal Kumar",
-      "CA Arpit Kabra",
-      "CA G.B. Modi",
-      "Shri Vikas Pansare"
+    "id": 24,
+    "category": "Ethics",
+    "question": "What should an employee do when a commercial target conflicts with policy?",
+    "options": [
+      "Ignore policy",
+      "Follow policy and escalate the conflict through the right channel",
+      "Hide the transaction",
+      "Ask the customer to decide"
     ],
-    correct: 2
+    "correct": 1,
+    "explanation": "Responsible growth requires policy adherence and transparent escalation of conflicts."
   },
   {
-    id: 25,
-    category: "eMSME Podcast",
-    question: "After watching the RAMP podcast, which action would best align with the programme's objectives?",
-    options: [
-      "Ignore technology adoption",
-      "Become credit-ready and digitally enabled",
-      "Avoid government support",
-      "Reduce formalisation"
+    "id": 25,
+    "category": "Learning",
+    "question": "What makes learning investments compound over time?",
+    "options": [
+      "One-time attendance",
+      "Applying learning, sharing knowledge and improving practice",
+      "Keeping learning private",
+      "Avoiding feedback"
     ],
-    correct: 1
+    "correct": 1,
+    "explanation": "Learning compounds when it changes behavior and spreads through the organization."
+  },
+  {
+    "id": 26,
+    "category": "Partnerships",
+    "question": "What creates a resilient partner ecosystem?",
+    "options": [
+      "Dependence on one source",
+      "Diversified relationships with shared expectations",
+      "No performance reviews",
+      "Informal commitments only"
+    ],
+    "correct": 1,
+    "explanation": "Diversification and clear expectations reduce concentration and execution risk."
+  },
+  {
+    "id": 27,
+    "category": "Metrics",
+    "question": "What makes a metric useful?",
+    "options": [
+      "It is easy to increase",
+      "It is linked to an outcome and prompts action",
+      "It has no owner",
+      "It is never reviewed"
+    ],
+    "correct": 1,
+    "explanation": "Useful metrics connect to outcomes, have owners and inform decisions."
+  },
+  {
+    "id": 28,
+    "category": "Problem Solving",
+    "question": "What should happen before selecting a solution?",
+    "options": [
+      "Jump to the first idea",
+      "Define the problem and understand root causes",
+      "Avoid data",
+      "Copy another team without context"
+    ],
+    "correct": 1,
+    "explanation": "Clear problem definition prevents teams from solving symptoms instead of causes."
+  },
+  {
+    "id": 29,
+    "category": "Change Management",
+    "question": "What improves adoption of a new process?",
+    "options": [
+      "Announce it once",
+      "Explain the purpose, involve users, train and reinforce",
+      "Remove all support",
+      "Avoid measuring adoption"
+    ],
+    "correct": 1,
+    "explanation": "Adoption improves through involvement, clarity, capability building and reinforcement."
+  },
+  {
+    "id": 30,
+    "category": "eMSME Mindset",
+    "question": "Which combination best supports sustainable MSME impact?",
+    "options": [
+      "Growth without controls",
+      "Customer value, responsible risk, technology and ownership",
+      "Technology without people",
+      "Controls without customer understanding"
+    ],
+    "correct": 1,
+    "explanation": "Sustainable impact requires customer value, sound risk practices, enabling technology and ownership."
   }
 ];
