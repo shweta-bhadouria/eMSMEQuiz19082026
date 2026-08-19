@@ -1,10 +1,18 @@
 const POINTS_PER_QUESTION = 10;
-const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbyG5ZRdztLTvRJIC-oYTH6GPMVkSfoOGxqbTI4x8ceF6SHk8LsNmPzevWEBRFKolaNx/exec";const SHEET_URL="Results";const ADMIN_PIN="ADMIN2026";const Q=window.QUIZ_QUESTIONS;const S = {
+
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyG5ZRdztLTvRJIC-oYTH6GPMVkSfoOGxqbTI4x8ceF6SHk8LsNmPzevWEBRFKolaNx/exec";
+
+const SHEET_URL = "https://docs.google.com/spreadsheets/d/1aRvWJhO0eh7Rs48qJIV7yj8Ikse5jZ29hIlR-m2mlAg";
+
+const ADMIN_PIN = "ADMIN2026";
+
+const Q = window.QUIZ_QUESTIONS;
+
+const S = {
   session: null,
   participant: null,
   adminResults: [],
   selected: null,
-  revealed: false,
   error: "",
   status: null
 };
