@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>eMSME Knowledge Challenge</title><style>*{box-sizing:border-box}body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#f8fafc;color:#0f172a}.hero,.login{background:linear-gradient(135deg,#020617,#0f172a,#172554);color:#fff}.hero{padding:24px}.login{min-height:100vh;padding:40px 22px}.wrap{max-width:1180px;margin:auto}.center{text-align:center}.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.card{background:#fff;border:1px solid #e2e8f0;border-radius:20px;box-shadow:0 2px 12px #0f172a0a}.login .card{background:#ffffff16;color:#fff;border-color:#ffffff24}.pad{padding:22px}.input{width:100%;height:44px;padding:0 12px;border:1px solid #cbd5e1;border-radius:11px;margin-top:10px}.btn{border:0;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer;background:#2563eb;color:#fff;text-decoration:none;display:inline-block}.btn.green{background:#059669}.btn.light{background:#fff;color:#0f172a;border:1px solid #cbd5e1}.btn:disabled{opacity:.5;cursor:not-allowed}.badge{display:inline-block;border-radius:999px;padding:6px 10px;background:#dbeafe;color:#1d4ed8;font-size:12px;font-weight:700}.option{cursor:pointer;padding:15px;border:1px solid #e2e8f0;border-radius:15px}.option.selected{border-color:#2563eb;background:#eff6ff}.bar{height:9px;background:#e2e8f0;border-radius:999px;overflow:hidden}.fill{height:100%;background:#2563eb}.muted{color:#64748b}.small{font-size:13px}.score{font-size:32px;font-weight:900}.feedback{margin-top:12px;padding:15px;border-radius:14px}.feedback.ok{background:#ecfdf5;color:#065f46}.feedback.no{background:#fff1f2;color:#9f1239}.status{position:fixed;right:16px;bottom:16px;padding:12px 14px;border-radius:12px;background:#047857;color:#fff;z-index:10}.status.err{background:#9f1239}main{padding:24px}.admin-card{min-height:180px}.review-card{margin-bottom:14px}.correct-border{border:2px solid #a7f3d0}.wrong-border{border:2px solid #fecdd3}@media(max-width:780px){.g2,.g3{grid-template-columns:1fr}.hero h1,.login h1{font-size:30px!important}}
+</style></head><body><div id="app"></div><script>window.QUIZ_QUESTIONS=[
+  {
+    "id": 1,
+    "category": "Digital Analytics",
+    "question": "What is the primary purpose of Hotjar?",
+    "options": [
+      "Database management",
+      "User behavior analytics",
+      "Email marketing",
+      "Payroll processing"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "category": "MSME Definition",
+    "question": "As per the revised MSME definition, classification is based on:",
+    "options": [
+      "Number of employees",
+      "Turnover and Investment",
+      "Location",
+      "Industry type only"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "category": "MSME Definition",
+    "question": "Maximum investment limit for a Micro Enterprise is:",
+    "options": [
+      "₹1 Crore",
+      "₹5 Crore",
+      "₹10 Crore",
+      "₹50 Crore"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "category": "MSME Definition",
+    "question": "Maximum turnover limit for a Small Enterprise is:",
+    "options": [
+      "₹10 Crore",
+      "₹50 Crore",
+      "₹100 Crore",
+      "₹250 Crore"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 5,
+    "category": "Saarthi",
+    "question": "Saarthi simplifies:",
+    "options": [
+      "Trading activities",
+      "Government scheme search and application journey",
+      "Loan repayment",
+      "Payroll processing"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 6,
+    "category": "Government Schemes",
+    "question": "ZED Certification focuses on:",
+    "options": [
+      "Digital marketing",
+      "Quality and productivity improvements",
+      "Employee recruitment",
+      "Foreign exchange"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 7,
+    "category": "Government Schemes",
+    "question": "RAMP stands for:",
+    "options": [
+      "Raising and Accelerating MSME Performance",
+      "Resource Allocation Management Program",
+      "Regional Assistance Management Plan",
+      "Rural Advancement MSME Program"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 8,
+    "category": "Compliance Health Check",
+    "question": "The primary objective of a Compliance Health Check (CHC) is to:",
+    "options": [
+      "Increase sales revenue",
+      "Evaluate a business's compliance status and identify gaps",
+      "Prepare financial statements",
+      "Calculate tax liability"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 9,
+    "category": "Excel",
+    "question": "Which formula combination is often considered a better alternative to VLOOKUP?",
+    "options": [
+      "MAX + MIN",
+      "INDEX + MATCH",
+      "SUM + IF",
+      "LEN + TRIM"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 10,
+    "category": "Excel",
+    "question": "What will the formula =COUNTIF(A1:A10,\">100\") return?",
+    "options": [
+      "Sums values above 100",
+      "Counts cells with values above 100",
+      "Counts text only",
+      "Finds maximum value"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 11,
+    "category": "Power BI",
+    "question": "A user wants a dashboard displaying CHC scores across states. Which tool should be used?",
+    "options": [
+      "Power Automate",
+      "Power Apps",
+      "Power BI",
+      "Outlook"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 12,
+    "category": "E-Invoicing",
+    "question": "Which document element is generated after successful invoice reporting to IRP?",
+    "options": [
+      "DSC",
+      "IRN",
+      "TAN",
+      "CIN"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 13,
+    "category": "Power BI",
+    "question": "Power BI is mainly used for:",
+    "options": [
+      "Data visualization and dashboards",
+      "Email management",
+      "Coding",
+      "Payroll"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 14,
+    "category": "E-Invoicing",
+    "question": "E-invoicing is currently mandatory for businesses whose aggregate turnover exceeds:",
+    "options": [
+      "₹1 Crore",
+      "₹2 Crore",
+      "₹5 Crore",
+      "₹10 Crore"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 15,
+    "category": "Knowledge Management",
+    "question": "What does SECI stand for?",
+    "options": [
+      "Socialization, Evaluation, Control, Integration",
+      "Socialization, Externalization, Combination, Internalization",
+      "Sharing, Execution, Communication, Innovation",
+      "Standardization, Evaluation, Collaboration, Improvement"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 16,
+    "category": "Kaizen",
+    "question": "What is the core philosophy of Kaizen?",
+    "options": [
+      "Radical transformation",
+      "Continuous incremental improvement",
+      "Automation only",
+      "Employee monitoring"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 17,
+    "category": "Kaizen",
+    "question": "In Kaizen, 'Muda' refers to:",
+    "options": [
+      "Innovation",
+      "Documentation",
+      "Waste",
+      "Planning"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 18,
+    "category": "Process Improvement",
+    "question": "PDCA stands for:",
+    "options": [
+      "Plan, Do, Check, Act",
+      "Prepare, Document, Check, Analyze",
+      "Plan, Deliver, Control, Audit",
+      "Process, Do, Check, Apply"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 19,
+    "category": "Performance Management",
+    "question": "What does OKR stand for?",
+    "options": [
+      "Objectives and Key Results",
+      "Output and Key Records",
+      "Operations and Key Reviews",
+      "Objectives and Key Responsibilities"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 20,
+    "category": "Collaboration",
+    "question": "Asynchronous transparency means:",
+    "options": [
+      "Working without communication",
+      "Sharing written updates that can be accessed anytime",
+      "Communicating only through meetings",
+      "Reporting only to managers"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 21,
+    "category": "RACI",
+    "question": "In RACI, who performs the work?",
+    "options": [
+      "Accountable",
+      "Responsible",
+      "Consulted",
+      "Informed"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 22,
+    "category": "eMSME Podcast",
+    "question": "In the eMSME podcast with Shri Vikas Pansare (IAS), the discussion primarily focused on which programme?",
+    "options": [
+      "PMEGP",
+      "CGTMSE",
+      "RAMP",
+      "ZED Certification"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 23,
+    "category": "eMSME Podcast",
+    "question": "In the podcast with CA Arpit Kabra, Chartered Accountants were described as evolving from:",
+    "options": [
+      "Auditors to Bankers",
+      "Compliance Professionals to Strategic Advisors",
+      "Tax Officers to Regulators",
+      "Accountants to Exporters"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 24,
+    "category": "eMSME Podcast",
+    "question": "'MSME ke SAA₹THI' Episode 1 featured:",
+    "options": [
+      "CA Vishal Kumar",
+      "CA Arpit Kabra",
+      "CA G.B. Modi",
+      "Shri Vikas Pansare"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 25,
+    "category": "eMSME Podcast",
+    "question": "After watching the RAMP podcast, which action would best align with the programme's objectives?",
+    "options": [
+      "Ignore technology adoption",
+      "Become credit-ready and digitally enabled",
+      "Avoid government support",
+      "Reduce formalisation"
+    ],
+    "correct": 1
+  }
+];
+</script><script>const POINTS_PER_QUESTION=10;
+const APPS_SCRIPT_URL="PASTE_APPS_SCRIPT_EXEC_URL";
+const SHEET_URL="PASTE_GOOGLE_SHEET_URL";
+const ADMIN_PIN="ADMIN2026";
+const Q=window.QUIZ_QUESTIONS||[];
+const S={session:null,participant:null,adminResults:[],selected:null,error:"",status:null};
+const $=id=>document.getElementById(id);
+function configured(){return APPS_SCRIPT_URL&&!APPS_SCRIPT_URL.includes("PASTE_")}
+function toast(msg,type="ok"){S.status={msg,type};render();setTimeout(()=>{S.status=null;render()},2500)}
+function jsonp(action,p={}){return new Promise((resolve,reject)=>{if(!configured())return reject(new Error("Apps Script URL is not configured"));const cb="cb_"+Date.now()+Math.random().toString(16).slice(2);const script=document.createElement("script");window[cb]=data=>{delete window[cb];script.remove();data&&data.ok!==false?resolve(data):reject(new Error(data&&data.error?data.error:"Apps Script error"))};script.onerror=()=>{delete window[cb];script.remove();reject(new Error("Could not reach Apps Script"))};script.src=APPS_SCRIPT_URL+"?"+new URLSearchParams({action,callback:cb,...p});document.body.appendChild(script)})}
+async function post(payload){if(!configured()){toast("Apps Script URL is not configured","err");return}try{await fetch(APPS_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(payload)});toast("Progress saved")}catch(e){toast("Could not save progress","err")}}
+function newParticipant(id,name){return{id,name,index:0,score:0,answers:{},complete:false,startedAt:new Date().toISOString(),updatedAt:new Date().toISOString()}}
+async function participantLogin(){const name=$("name").value.trim();const id=$("pid").value.trim().toUpperCase();if(!name||!id){S.error="Enter your name and participant ID.";render();return}S.error="";try{const data=await jsonp("getParticipant",{participantId:id,pin:ADMIN_PIN});S.participant=data.state?JSON.parse(data.state):newParticipant(id,name)}catch(e){S.participant=newParticipant(id,name);toast("Starting a new attempt; saved progress could not be loaded.","err")}S.participant.name=name;S.session="participant";const q=Q[S.participant.index];const saved=q?S.participant.answers[q.id]:null;S.selected=saved?saved.selected:null;render()}
+async function adminLogin(){if($("pin").value!==ADMIN_PIN){S.error="Invalid admin PIN.";render();return}S.error="";S.session="admin";await refreshAdmin()}
+async function refreshAdmin(){try{const data=await jsonp("results",{pin:ADMIN_PIN});S.adminResults=data.results||[];toast("Results refreshed")}catch(e){toast(e.message,"err")}render()}
+function logout(){S.session=null;S.participant=null;S.selected=null;S.error="";render()}
+function choose(index){S.selected=index;render()}
+async function submit(){if(S.selected===null)return;const p=S.participant;const q=Q[p.index];const correct=S.selected===q.correct;p.answers[q.id]={selected:S.selected,correct,points:correct?POINTS_PER_QUESTION:0};p.score=Object.values(p.answers).reduce((sum,a)=>sum+Number(a.points||0),0);p.updatedAt=new Date().toISOString();if(p.index>=Q.length-1){p.complete=true;S.selected=null}else{p.index+=1;const next=Q[p.index];const saved=p.answers[next.id];S.selected=saved?saved.selected:null}await saveParticipant();render()}
+function previousQuestion(){const p=S.participant;if(p.index===0)return;p.index-=1;const saved=p.answers[Q[p.index].id];S.selected=saved?saved.selected:null;render()}
+async function saveParticipant(){const p=S.participant;await post({action:"save",pin:ADMIN_PIN,participantId:p.id,name:p.name,state:JSON.stringify(p)})}
+function exportCsv(){const rows=[["Participant ID","Name","Score","Answered","Correct","Status","Updated At"],...S.adminResults.map(r=>[r.participantId,r.name,r.score,r.answered,r.correct,r.status,r.updatedAt])];const csv=rows.map(r=>r.map(v=>'"'+String(v??"").replaceAll('"','""')+'"').join(",")).join("\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="emsme-quiz-results.csv";a.click()}
+function status(){return S.status?`<div class="status ${S.status.type==='err'?'err':''}">${S.status.msg}</div>`:""}
+function login(){document.getElementById("app").innerHTML=`<div class="login"><div class="wrap"><div class="center"><span class="badge">eMSME Quiz</span><h1 style="font-size:48px">eMSME Knowledge Challenge</h1><p>Answer ${Q.length} multiple-choice questions. Each correct answer is worth ${POINTS_PER_QUESTION} points.</p></div><div class="grid g2" style="margin-top:34px"><div class="card pad"><h2>Participant Login</h2><input id="name" class="input" placeholder="Full name"><input id="pid" class="input" placeholder="Participant ID / employee code"><button class="btn" style="width:100%;margin-top:13px" onclick="participantLogin()">Start Quiz</button></div><div class="card pad"><h2>Admin Login</h2><input id="pin" type="password" class="input" placeholder="Admin PIN"><button class="btn green" style="width:100%;margin-top:13px" onclick="adminLogin()">Open Results</button></div></div>${S.error?`<p class="center" style="color:#fecdd3">${S.error}</p>`:""}<p class="center small" style="color:#cbd5e1;margin-top:28px">Correct and incorrect answers are shown after the quiz is submitted.</p></div></div>${status()}`}
+function participant(){const p=S.participant;if(p.complete)return complete();const q=Q[p.index];const saved=p.answers[q.id];if(S.selected===null&&saved&&saved.selected!==undefined)S.selected=saved.selected;document.getElementById("app").innerHTML=`<div class="hero"><div class="wrap row"><div><span class="badge">${p.name}</span><h1>eMSME Knowledge Challenge</h1></div><div><div class="small">Answered</div><div class="score">${Object.keys(p.answers).length}/${Q.length}</div></div></div></div><main class="wrap"><div class="row"><span>Question ${p.index+1} of ${Q.length}</span><span>${q.category}</span></div><div class="bar" style="margin:10px 0 20px"><div class="fill" style="width:${(p.index+1)/Q.length*100}%"></div></div><div class="card pad"><h2>${q.question}</h2><div class="grid g2">${q.options.map((o,i)=>`<div class="option ${S.selected===i?'selected':''}" onclick="choose(${i})"><b>${String.fromCharCode(65+i)}.</b> ${o}</div>`).join("")}</div><div class="row" style="margin-top:18px"><button class="btn light" ${p.index===0?'disabled':''} onclick="previousQuestion()">Previous</button><button class="btn" ${S.selected===null?'disabled':''} onclick="submit()">${p.index===Q.length-1?'Submit Quiz':'Save & Next'}</button></div></div></main>${status()}`}
+function complete(){const p=S.participant;const correctCount=Object.values(p.answers).filter(a=>a.correct).length;document.getElementById("app").innerHTML=`<div class="hero"><div class="wrap center"><span class="badge">Quiz Complete</span><h1>eMSME Knowledge Challenge</h1><p style="font-size:22px">${p.name}, you scored <b>${p.score}</b> out of <b>${Q.length*POINTS_PER_QUESTION}</b>.</p><p>Correct answers: <b>${correctCount}</b> of <b>${Q.length}</b></p></div></div><main class="wrap"><h2>Answer Review</h2>${Q.map(q=>{const a=p.answers[q.id];const ok=a&&a.correct;const selected=a?q.options[a.selected]:"Not answered";return`<div class="card pad review-card ${ok?'correct-border':'wrong-border'}"><div class="row"><div><span class="badge">Question ${q.id}</span> <span class="small muted">${q.category}</span></div><b style="color:${ok?'#047857':'#be123c'}">${ok?'Correct':'Incorrect'}</b></div><h3>${q.question}</h3><div class="feedback ${ok?'ok':'no'}"><b>Your answer:</b> ${selected}</div>${ok?'':`<div class="feedback ok"><b>Correct answer:</b> ${q.options[q.correct]}</div>`}<p class="small muted">Points earned: ${a?a.points:0} / ${POINTS_PER_QUESTION}</p></div>`}).join("")}<div class="center" style="padding:20px"><button class="btn light" onclick="logout()">Return to Login</button></div></main>${status()}`}
+function admin(){const sorted=[...S.adminResults].sort((a,b)=>Number(b.score||0)-Number(a.score||0));document.getElementById("app").innerHTML=`<div class="hero"><div class="wrap row"><div><span class="badge">Admin Results</span><h1>eMSME Quiz Participants</h1></div><button class="btn light" onclick="logout()">Logout</button></div></div><main class="wrap"><div class="row" style="justify-content:flex-end"><button class="btn light" onclick="refreshAdmin()">Refresh Results</button><button class="btn" onclick="exportCsv()">Export CSV</button>${SHEET_URL.includes('PASTE_')?'':`<a class="btn green" target="_blank" href="${SHEET_URL}">Open Result Sheet</a>`}</div><div class="grid g3" style="margin-top:18px">${sorted.length?sorted.map((r,i)=>{const answered=Number(r.answered||0);const correct=Number(r.correct||0);const progress=Math.min(100,answered/Q.length*100);return`<div class="card pad admin-card"><div class="row"><div><span class="badge">Rank #${i+1}</span><h3>${r.name||'Unnamed Participant'}</h3><p class="small muted">${r.participantId||''}</p></div><div class="score">${Number(r.score||0)}</div></div><div class="bar"><div class="fill" style="width:${progress}%"></div></div><p>Answered ${answered}/${Q.length} · Correct ${correct}</p><p class="small muted">${r.status||'In progress'}${r.updatedAt?` · ${r.updatedAt}`:''}</p></div>`}).join(""):`<div class="card pad">No participants have started yet.</div>`}</div></main>${status()}`}
+function render(){if(!S.session)return login();if(S.session==='admin')return admin();return participant()}
+if(!Q.length){document.getElementById("app").innerHTML=`<div style="padding:30px;font-family:Arial"><h2>Quiz configuration error</h2><p>No questions were loaded.</p></div>`;}else{render();}
+</script></body></html>
